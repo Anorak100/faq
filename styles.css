@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./cool1.jpg")  no-repeat ;
+    
+}
+
+#title{
+    text-align: center;
+
+}
+
+.accordion{
+    width: 65% ;
+    height: 50%;
+    background-color:white;
+    border-radius: 10px;
+    
+
+}
+                
