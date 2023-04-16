@@ -2,23 +2,61 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./cool1.jpg")  no-repeat ;
     
 }
 
-#title{
+ .accordion #title{
     text-align: center;
 
 }
+ .content-container{
+     margin: 30px 0px;
+
+ }
 
 .accordion{
     width: 65% ;
-    height: 50%;
     background-color:white;
     border-radius: 10px;
+    padding: 30px;
     
 
+}
+.accordion .content-container .question{
+    font-size: 25px;
+    border-bottom: 0.02px solid;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion .content-container .answer{
+    text-align: center;
+    line-height: 1.4em;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.accordion .content-container .question::after{
+    content: '+';
+    position: absolute;
+    right: -5px;
+}
+
+.accordion .content-container.active .answer {
+    height:auto;
+    padding-top: 20px;
+
+}
+.accordion .content-container.active .question::after{
+    content: '-';
+    position: absolute;
+    right: -5px;
 }
                 
