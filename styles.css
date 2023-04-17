@@ -10,6 +10,7 @@ body{
 
  .accordion #title{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif
 
 }
  .content-container{
@@ -31,6 +32,7 @@ body{
     padding: 20px;
     position: relative;
     cursor: pointer;
+    transition: .5s;
 }
 
 .accordion .content-container .answer{
@@ -58,5 +60,10 @@ body{
     content: '-';
     position: absolute;
     right: -5px;
+    font-size: 25px;
+}
+
+.accordion .content-container.active .question{
+    font-size: 20px;
 }
                 
